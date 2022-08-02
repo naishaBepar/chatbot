@@ -93,6 +93,13 @@
     width: 18px;
 }
 
+#normy {
+    width: 15%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+    float: left;
+}
+
 #fr-icon:hover {
     opacity: .7;
 }
@@ -131,9 +138,10 @@
     background: #1982FC;
     padding: 10px 15px;
     border-radius: 20px 20px 0px 20px;
-    max-width: 80%;
+    max-width: 60%;
     margin-right: 10px;
-    animation: floatup .5s forwards
+    animation: floatup .5s forwards;
+    text-align: left;
 }
 
 .botText {
@@ -152,8 +160,7 @@
     border-radius: 20px 20px 20px 0px;
     border-color: rgb(206, 206, 206);
     border-style: solid;
-    max-width: 80%;
-    margin-left: 10px;
+    max-width: 60%;
     animation: floatup .5s forwards
 }
 

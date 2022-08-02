@@ -95,7 +95,10 @@ function sendButton() {
 
 function advisorButton() {
     buttonSendText("Sending your question over to your FR!")
-    window.location.href = "advisor.html";
+
+    setTimeout(function() {
+        window.location.href = "advisor.html"
+    }, 1750)
 }
 
 // Press enter to send a message

@@ -1,6 +1,10 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .chat-bar-collapsible {
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     right: 50px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -81,6 +85,14 @@
     opacity: .7;
 }
 
+#fr-icon {
+    width: 18px;
+}
+
+#fr-icon:hover {
+    opacity: .7;
+}
+
 /* Chat bubbles */
 
 #userInput {
@@ -92,7 +104,7 @@
     border: none;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
     font-size: 16px;
     color: #000;
@@ -112,10 +124,9 @@
 .userText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #5ca6fa;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom-right-radius: 2px;
+    background: #1982FC;
+    padding: 10px 15px;
+    border-radius: 20px 20px 0px 20px;
     max-width: 80%;
     margin-right: 10px;
     animation: floatup .5s forwards
@@ -133,9 +144,8 @@
     line-height: 1.5em;
     display: inline-block;
     background: #e0e0e0;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom-left-radius: 2px;
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 0px;
     max-width: 80%;
     margin-left: 10px;
     animation: floatup .5s forwards

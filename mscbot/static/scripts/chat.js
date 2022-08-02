@@ -60,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "I love Northwestern Mutual!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -93,8 +93,8 @@ function sendButton() {
     getResponse();
 }
 
-function heartButton() {
-    buttonSendText("Heart clicked!")
+function advisorButton() {
+    buttonSendText("Sending your question over to your FR!")
 }
 
 // Press enter to send a message

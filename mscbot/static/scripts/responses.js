@@ -8,7 +8,11 @@ function getBotResponse(input) {
     } else if (input == "What is the difference between an IRA and a Roth IRA?") {
         s = `I believe this <a href="https://www.northwesternmutual.com/iras-and-retirement-plans/#:~:text=With%20a%20Roth%20IRA%2C%20contributions,advisor%20can%20help%20you%20navigate/">site</a> will help answer your question. `;
         s += "Did I answer your question?";
-    } else if (input == "What is the best investment for me?" || input == "No.") {
+    } else if (input == "What is the best investment for me?") {
+        advisorButtonResponse()
+        s = `Unfortunately I am unable to answer this question. Let me send you over to your FR!`;
+    } else if (input == "No.") {
+        advisorButtonResponse()
         s = `Unfortunately I am unable to answer this question. Let me send you over to your FR!`;
     } else if (input == "Annuities") {
         s = `I believe this <a href="https://www.northwesternmutual.com/faq/life-insurance-faq/#:~:text=To%20change%20the%20beneficiary%2C%20you,Monday%20through%20Friday.&text=Changes%20in%20your%20personal%20life,need%20to%20change%20the%20policyowner.">site</a> will help answer your question. `;
@@ -21,4 +25,12 @@ function getBotResponse(input) {
         s = `Awesome, happy to help! Do you have any other questions?`
     }
     return s;
+}
+
+function advisorButtonResponse() {
+    // buttonSendText("Please take me to my FR!")
+
+    setTimeout(function() {
+        window.location.href = "advisor.html"
+    }, 2400)
 }

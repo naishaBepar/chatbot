@@ -101,6 +101,10 @@ function advisorButton() {
     }, 1750)
 }
 
+function backButton() {
+    window.location.href = "index.html"
+}
+
 // Press enter to send a message
 $("#textInput").keypress(function (e) {
     if (e.which == 13) {

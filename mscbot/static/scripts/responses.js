@@ -1,14 +1,16 @@
 function getBotResponse(input) {
-    //rock paper scissors
-    if (input == "How do I change my bank account number?") {
-        return "Contact your Northwestern Mutual representative at 1-800-388-8123, 7 a.m. to 6 p.m. CT, Monday through Friday";
+    if (input == `I received an "Urgent Notice" What does this mean?`) {
+        return "We will send you an Urgent Notice if we don't receive a check from you within 10 days of the due date.";
     } else if (input == "How do I change beneficiaries?") {
-        return `For beneficiary changes on investment products, contact your financial representative or call Investment Client services at (866) 950-4644. 
-        For beneficiary changes on an Income Annuity or Income Plan, contact your financial representative or call Annuity Client Services at (866) 269-2950.
-        For beneficiary changes on an Universal Life product, contact your financial representative or call Universal Life Services at (866) 464-3800.`;
-    } else if (input == "Can I get my 1099 on the website?") {
-        return "Yes, you can get it online at https://www.1099online.com/";
-    } else if (input == "I love Northwestern Mutual!") {
+        return "Would you like to change beneficiaries for your life insurance, annuties, retirement fund, or a combination of all three?";
+    } else if (input == "What is the difference between an IRA and a Roth IRA?") {
+        return `I believe this <a href="https://www.northwesternmutual.com/iras-and-retirement-plans/#:~:text=With%20a%20Roth%20IRA%2C%20contributions,advisor%20can%20help%20you%20navigate/">site</a> will help answer your question.`;
+    } else if (input == "What is the best investment for me?") {
+        return `Unfortunately I am unable to answer this question. Let me send you over to your FR!`;
+    } else if (input == "Annuities") {
+        return `I believe this <a href="https://www.northwesternmutual.com/faq/life-insurance-faq/#:~:text=To%20change%20the%20beneficiary%2C%20you,Monday%20through%20Friday.&text=Changes%20in%20your%20personal%20life,need%20to%20change%20the%20policyowner.">site</a> will help answer your question.`;
+    } 
+    else if (input == "I love Northwestern Mutual!") {
         return `I love Northwestern Mutual too!`
     }
 }

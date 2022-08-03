@@ -45,7 +45,7 @@ function firstBotMessage() {
 }
 
 function firstAdvisorMessage() {
-    let firstMessage = "Hi there! I see that you want to change your bank account number. Let me help you with that!"
+    let firstMessage = "Hi there! How can I help you today?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();

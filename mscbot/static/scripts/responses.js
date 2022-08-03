@@ -8,5 +8,7 @@ function getBotResponse(input) {
         For beneficiary changes on an Universal Life product, contact your financial representative or call Universal Life Services at (866) 464-3800.`;
     } else if (input == "Can I get my 1099 on the website?") {
         return "Yes, you can get it online at https://www.1099online.com/";
+    } else if (input == "I love Northwestern Mutual!") {
+        return `I love Northwestern Mutual too!`
     }
 }
